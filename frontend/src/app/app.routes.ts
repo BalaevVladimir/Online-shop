@@ -6,11 +6,7 @@ export const routes: Routes = [
         redirectTo: 'main',
         pathMatch: 'full',
     },
-        {
-        path: 'main',
-        redirectTo: '/auth',
-        pathMatch: 'full',
-    },
+        
         {
         path: 'main',
         loadChildren: () => import('../app/pages/main/main.routes').then((mr) => mr.mainRoutes)
